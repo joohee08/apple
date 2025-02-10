@@ -224,7 +224,7 @@
     justify-content: space-around;
     width: 100%;
     padding: 15px 0;
-    border-top: 1px solid #ddd;  /* 상단 경계선 */
+    background: WHITE;
     margin-top: 10px;  /* 플레이리스트와의 간격 */
 }
 
@@ -247,7 +247,7 @@
     object-fit: contain;
     filter: grayscale(30%);
     transition: filter 0.2s ease-in-out;
-}
+}  
 
 .menubar01 button:hover img {
     filter: grayscale(0%);
