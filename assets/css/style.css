@@ -199,6 +199,60 @@
     color: #666;
 }
 
+/*컨트롤 버튼 */
+.playlistM .playlist .playlist-controls {
+    display: flex;
+    align-items: center;
+    margin-right: 35px;
+}
+
+.playlistM .playlist .playlist-controls button {
+    border: none;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.playlistM .playlist .playlist-controls img {
+    width: 24px;
+    height: 24px;
+}
+
+/* 메뉴바 */
+.menubar01 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: 15px 0;
+    border-top: 1px solid #ddd;  /* 상단 경계선 */
+    margin-top: 10px;  /* 플레이리스트와의 간격 */
+}
+
+.menubar01 button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.menubar01 button:active {
+    transform: scale(0.7);
+}
+
+.menubar01 button img {
+    height: 52px;
+    object-fit: contain;
+    filter: grayscale(30%);
+    transition: filter 0.2s ease-in-out;
+}
+
+.menubar01 button:hover img {
+    filter: grayscale(0%);
+}
+
 .container {
     overflow: hidden;
 }
