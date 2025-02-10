@@ -4,6 +4,17 @@
 /* row */
 .row {position: relative; margin: 0 20px;}
 
+
+/* Swiper 공통 적용 */
+.swiper, .swiper-slide {
+    cursor: grab;
+}
+
+/* 마우스를 클릭한 상태에서는 grabbing */
+.swiper:active, .swiper-slide:active {
+    cursor: grabbing;
+}
+
 /* header */
 #header .header-data {
     font-weight: 600;
@@ -60,16 +71,29 @@
 
 /* recentM */
 
-.recentM{
+.recentM.swiper{
+    position: relative;
     padding: 10px 0;
     margin-top: 19px;
     overflow: hidden;
 }
 
+.recentM .swiper-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.recentM .swiper-slide {
+    display: flex;
+    justify-content: center;
+    width: auto !important;
+}
+
 .recentM .recent{
-    float: left;
-    width: 49%;
-    margin-right: 2%;
+    width: 200px;
+    margin-right: 20px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
 }
 
 .recentM .recent:last-child{
@@ -85,6 +109,13 @@
     padding-top: 20px;
 }
 
+/* 이미지 크기 고정 */
+.recentM .recent img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
 .recentM .recent-title .rt-stit{
     font-size: 15px;
     line-height: 1.9;
@@ -98,6 +129,35 @@
 
 /* nextM */
 
+.nextM .swiper-slide {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.nextM .next-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.nextM .next {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.nextM .next-img {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+}
+
 .nextM h2{
     font-size: 20px;
     font-weight: bold;
@@ -105,12 +165,6 @@
     margin-top: 16px;
     border-top: 1px solid #ebebeb;
     padding-top: 20px;
-}
-
-.nextM .next{
-    display: flex;
-    margin-bottom: 16px;
-    position: relative;
 }
 
 .nextM .next:after{
@@ -175,12 +229,6 @@
     box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.1);
 }
 
-.playlistM .playlist .playlist-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 .playlistM .playlist .playlist-title {
     flex-grow: 1;
     padding-left: 15px;
@@ -218,7 +266,7 @@
 }
 
 /* 메뉴바 */
-.menubar01 {
+.menubar {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -228,7 +276,7 @@
     margin-top: 10px;  /* 플레이리스트와의 간격 */
 }
 
-.menubar01 button {
+.menubar button {
     background: none;
     border: none;
     cursor: pointer;
@@ -238,19 +286,30 @@
     transition: transform 0.2s ease-in-out;
 }
 
-.menubar01 button:active {
+.menubar button:active {
     transform: scale(0.7);
 }
 
-.menubar01 button img {
+.menubar button img {
     height: 52px;
     object-fit: contain;
-    filter: grayscale(30%);
-    transition: filter 0.2s ease-in-out;
 }  
 
-.menubar01 button:hover img {
+.menubar button:hover img {
     filter: grayscale(0%);
+}
+
+.nextM .swiper,
+.bestM .swiper,
+.recentM .swiper {
+    cursor: grab;
+}
+
+/* 클릭한 상태에서는 grabbing */
+.nextM .swiper:active,
+.bestM .swiper:active,
+.recentM .swiper:active {
+    cursor: grabbing;
 }
 
 .container {

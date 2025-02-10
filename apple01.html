@@ -31,10 +31,15 @@
     <link rel="apple-touch-icon-precomposed" sizes="192x192"
         href="https://github.com/joohee08/apple/assets/icon/icon_192.jpg">
 
-    <!-- style -->
+    <!-- css -->
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/apple01.js"></script>
 </head>
 
 <body>
@@ -54,18 +59,62 @@
         <article class="bestM">
             <div class="container">
                 <div class="row">
-                    <div class="best">
-                        <div class="best-title">
-                            <span class="bt-stit">BEAT1 ON AIR</span>
-                            <h2 class="bt-tit">Travis Mills</h2>
-                            <p class="bt-desc">L.A’s pop culture authority</p>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <!-- 1번째 슬라이드 -->
+                            <div class="swiper-slide">
+                                <div class="best">
+                                    <div class="best-title">
+                                        <span class="bt-stit">BEAT1 ON AIR</span>
+                                        <h2 class="bt-tit">Christopher</h2>
+                                        <p class="bt-desc">L.A’s pop culture authority</p>
+                                    </div>
+                                    <picture>
+                                        <source srcset="assets/img/christopher03.jpg" media="(min-width:800px)">
+                                        <source srcset="assets/img/christopher02.jpg" media="(min-width:600px)">
+                                        <img src="assets/img/christopher01.jpg"
+                                            srcset="assets/img/christopher01.jpg 1x, assets/img/christopher02.jpg 2x, assets/img/christopher03.jpg 3x"
+                                            alt="크리스토퍼">
+                                    </picture>
+                                </div>
+                            </div>
+
+                            <!-- 2번째 슬라이드 -->
+                            <div class="swiper-slide">
+                                <div class="best">
+                                    <div class="best-title">
+                                        <span class="bt-stit">TOP 100</span>
+                                        <h2 class="bt-tit">Jennie(제니)</h2>
+                                        <p class="bt-desc">BLACKPINK의 아이콘</p>
+                                    </div>
+                                    <picture>
+                                        <source srcset="assets/img/jennie03.jpg" media="(min-width:800px)">
+                                        <source srcset="assets/img/jennie02.jpg" media="(min-width:600px)">
+                                        <img src="assets/img/jennie01.jpg"
+                                            srcset="assets/img/jennie01.jpg 1x, assets/img/jennie02.jpg 2x, assets/img/jennie03.jpg 3x"
+                                            alt="제니">
+                                    </picture>
+                                </div>
+                            </div>
+
+                            <!-- 3번째 슬라이드 -->
+                            <div class="swiper-slide">
+                                <div class="best">
+                                    <div class="best-title">
+                                        <span class="bt-stit">TOP CHART</span>
+                                        <h2 class="bt-tit">GD</h2>
+                                        <p class="bt-desc">대한민국 대표 아티스트</p>
+                                    </div>
+                                    <picture>
+                                        <source srcset="assets/img/gd03.jpg" media="(min-width:800px)">
+                                        <source srcset="assets/img/gd02.jpg" media="(min-width:600px)">
+                                        <img src="assets/img/gd01.jpg"
+                                            srcset="assets/img/gd01.jpg 1x, assets/img/gd02.jpg 2x, assets/img/gd03.jpg 3x"
+                                            alt="지디">
+                                    </picture>
+                                </div>
+                            </div>
                         </div>
-                        <picture>
-                            <source srcset="assets/img/christopher03.jpg" media="(min-width:800px)">
-                            <source srcset="assets/img/christopher02.jpg" media="(min-width:600px)">
-                            <img src="assets/img/christopher01.jpg" srcset="assets/img/christopher01.jpg 1x, assets/img/christopher02.jpg 2x, 
-                            assets/img/christopher03.jpg 3x" alt="크리스토퍼">
-                        </picture>
                     </div>
                 </div>
             </div>
@@ -76,31 +125,55 @@
             <div class="container">
                 <div class="row">
                     <h2>최근 재생한 음악</h2>
-                    <!-- 1번 -->
-                    <div class="recent">
-                        <picture>
-                            <source srcset="assets/img/rebel_heart03.jpg" media="(min-width:800px)">
-                            <source srcset="assets/img/rebel_heart02.jpg" media="(min-width:600px)">
-                            <img src="assets/img/rebel_heart01.jpg" srcset="assets/img/rebel_heart01.jpg 1x, assets/img/rebel_heart02.jpg 2x, 
-                            assets/img/rebel_heart03.jpg 3x" alt="아이브">
-                        </picture>
-                        <div class="recent-title">
-                            <span class="rt-stit">Rebel Heart</span>
-                            <h3 class="rt-tit">IVE</h3>
-                        </div>
-                    </div>
+                    <div class="swiper recentSwiper">
+                        <div class="swiper-wrapper">
+                            <!-- 1번 -->
+                            <div class="swiper-slide">
+                                <div class="recent">
+                                    <picture>
+                                        <source srcset="assets/img/rebel_heart03.jpg" media="(min-width:800px)">
+                                        <source srcset="assets/img/rebel_heart02.jpg" media="(min-width:600px)">
+                                        <img src="assets/img/rebel_heart01.jpg" srcset="assets/img/rebel_heart01.jpg 1x, assets/img/rebel_heart02.jpg 2x, 
+                                assets/img/rebel_heart03.jpg 3x" alt="아이브">
+                                    </picture>
+                                    <div class="recent-title">
+                                        <span class="rt-stit">Rebel Heart</span>
+                                        <h3 class="rt-tit">IVE</h3>
+                                    </div>
+                                </div>
+                            </div>
 
-                    <!-- 2번 -->
-                    <div class="recent">
-                        <picture>
-                            <source srcset="assets/img/optimize03.jpg" media="(min-width:800px)">
-                            <source srcset="assets/img/optimize02.jpg" media="(min-width:600px)">
-                            <img src="assets/img/optimize01.jpg" srcset="assets/img/optimize01.jpg 1x, assets/img/optimize02.jpg 2x, 
-                            assets/img/optimize03.jpg 3x" alt="데이식스">
-                        </picture>
-                        <div class="recent-title">
-                            <span class="rt-stit">Congratulations</span>
-                            <h3 class="rt-tit">Day6</h3>
+                            <!-- 2번 -->
+                            <div class="swiper-slide">
+                                <div class="recent">
+                                    <picture>
+                                        <source srcset="assets/img/optimize03.jpg" media="(min-width:800px)">
+                                        <source srcset="assets/img/optimize02.jpg" media="(min-width:600px)">
+                                        <img src="assets/img/optimize01.jpg" srcset="assets/img/optimize01.jpg 1x, assets/img/optimize02.jpg 2x, 
+                                assets/img/optimize03.jpg 3x" alt="데이식스">
+                                    </picture>
+                                    <div class="recent-title">
+                                        <span class="rt-stit">Congratulations</span>
+                                        <h3 class="rt-tit">Day6</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 3번 -->
+                            <div class="swiper-slide">
+                                <div class="recent">
+                                    <picture>
+                                        <source srcset="assets/img/woody03.jpg" media="(min-width:800px)">
+                                        <source srcset="assets/img/woody02.jpg" media="(min-width:600px)">
+                                        <img src="assets/img/woody01.jpg" srcset="assets/img/woody01.jpg 1x, assets/img/woody02.jpg 2x, 
+                                assets/img/woody03.jpg 3x" alt="우디">
+                                    </picture>
+                                    <div class="recent-title">
+                                        <span class="rt-stit">사막에서 꽃을 피우듯</span>
+                                        <h3 class="rt-tit">우디(Woody)</h3>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -112,128 +185,195 @@
             <div class="container">
                 <div class="row">
                     <h2>다음 프로그램</h2>
-                    <div class="next-wrap">
+                    <div class="swiper nextSwiper">
+                        <div class="swiper-wrapper">
 
-                        <!-- 1번 -->
-                        <div class="next">
-                            <div class="next-img">
-                                <picture>
-                                    <source srcset="assets/img/diewithasmile03.jpg" media="(min-width:800px)">
-                                    <source srcset="assets/img/diewithasmile02.jpg" media="(min-width:600px)">
-                                    <img src="assets/img/diewithasmile01.jpg" srcset="assets/img/diewithasmile01.jpg 1x, assets/img/diewithasmile02.jpg 2x, 
-                                    assets/img/diewithasmile03.jpg 3x" alt="브루노가가">
-                                </picture>
-                            </div>
-                            <div class="next-tit">
-                                <span class="nt-stit">Die With A Smile</span>
-                                <h3 class="nt-tit">Die With A Smile</h3>
-                                <p class="nt-desc">Lady Gaga,Bruno Mars</p>
-                            </div>
-                        </div>
+                            <!-- 첫 번째 그룹 -->
+                            <div class="swiper-slide">
+                                <div class="next-wrap">
+                                    <!-- 1번 -->
+                                    <div class="next"
+                                        data-title="Die With A Smile"
+                                        data-artist="Lady Gaga, Bruno Mars"
+                                        data-img="assets/img/diewithasmile01.jpg"
+                                        data-audio="assets/audio/diewithasmile.m4a">
 
-                        <!-- 2번 -->
-                        <div class="next">
-                            <div class="next-img">
-                                <picture>
-                                    <source srcset="assets/img/thewinning03.jpg" media="(min-width:800px)">
-                                    <source srcset="assets/img/thewinning02.jpg" media="(min-width:600px)">
-                                    <img src="assets/img/thewinning01.jpg" srcset="assets/img/thewinning01.jpg 1x, assets/img/thewinning02.jpg 2x, 
-                                    assets/img/thewinning03.jpg 3x" alt="브루노가가">
-                                </picture>
-                            </div>
-                            <div class="next-tit">
-                                <span class="nt-stit">[EP]</span>
-                                <h3 class="nt-tit">The Winning</h3>
-                                <p class="nt-desc">아이유</p>
-                            </div>
-                        </div>
+                                        <div class="next-img">
+                                            <img src="assets/img/diewithasmile01.jpg" alt="브루노가가">
+                                        </div>
+                                        <div class="next-tit">
+                                            <span class="nt-stit">Die With A Smile</span>
+                                            <h3 class="nt-tit">Die With A Smile</h3>
+                                            <p class="nt-desc">Lady Gaga,Bruno Mars</p>
+                                        </div>
+                                    </div>
+                                    <!-- 2번 -->
+                                    <div class="next"
+                                        data-title="Love wins all"
+                                        data-artist="아이유"
+                                        data-img="assets/img/thewinning01.jpg"
+                                        data-audio="assets/audio/lovewinsall.m4a">
 
-                        <!-- 3번 -->
-                        <div class="next">
-                            <div class="next-img">
-                                <picture>
-                                    <source srcset="assets/img/loseyourself03.jpg" media="(min-width:800px)">
-                                    <source srcset="assets/img/loseyourself02.jpg" media="(min-width:600px)">
-                                    <img src="assets/img/loseyourself01.jpg" srcset="assets/img/loseyourself01.jpg 1x, assets/img/loseyourself02.jpg 2x, 
-                                    assets/img/loseyourself03.jpg 3x" alt="브루노가가">
-                                </picture>
-                            </div>
-                            <div class="next-tit">
-                                <span class="nt-stit">[EP]</span>
-                                <h3 class="nt-tit">Lose Yourself</h3>
-                                <p class="nt-desc">KISS OF LIFE</p>
-                            </div>
-                        </div>
+                                        <div class="next-img">
+                                            <img src="assets/img/thewinning01.jpg" alt="아이유">
+                                        </div>
+                                        <div class="next-tit">
+                                            <span class="nt-stit">[EP]</span>
+                                            <h3 class="nt-tit">The Winning</h3>
+                                            <p class="nt-desc">아이유</p>
+                                        </div>
+                                    </div>
+                                    <!-- 3번 -->
+                                    <div class="next"
+                                        data-title="Igloo"
+                                        data-artist="KISS OF LIFE"
+                                        data-img="assets/img/loseyourself01.jpg"
+                                        data-audio="assets/audio/igloo.m4a">
 
-                        <!-- 4번 -->
-                        <div class="next">
-                            <div class="next-img">
-                                <picture>
-                                    <source srcset="assets/img/homesweethome03.jpg" media="(min-width:800px)">
-                                    <source srcset="assets/img/homesweethome02.jpg" media="(min-width:600px)">
-                                    <img src="assets/img/homesweethome01.jpg" srcset="assets/img/homesweethome01.jpg 1x, assets/img/homesweethome02.jpg 2x, 
-                                    assets/img/homesweethome03.jpg 3x" alt="브루노가가">
-                                </picture>
-                            </div>
-                            <div class="next-tit">
-                                <span class="nt-stit">[싱글]</span>
-                                <h3 class="nt-tit">HOME SWEET HOME</h3>
-                                <p class="nt-desc">G-DRAGON(feat.태양,대성)</p>
-                            </div>
-                        </div>
+                                        <div class="next-img">
+                                            <img src="assets/img/loseyourself01.jpg" alt="KISS OF LIFE">
+                                        </div>
+                                        <div class="next-tit">
+                                            <span class="nt-stit">[EP]</span>
+                                            <h3 class="nt-tit">Lose Yourself</h3>
+                                            <p class="nt-desc">KISS OF LIFE</p>
+                                        </div>
+                                    </div>
+                                    <!-- 4번 -->
+                                    <div class="next"
+                                        data-title="HOME SWEET HOME"
+                                        data-artist="G-DRAGON(feat.태양,대성)"
+                                        data-img="assets/img/homesweethome01.jpg"
+                                        data-audio="assets/audio/homesweethome.m4a">
 
-                        <!-- 5번 -->
-                        <div class="next">
-                            <div class="next-img">
-                                <picture>
-                                    <source srcset="assets/img/rosie03.jpg" media="(min-width:800px)">
-                                    <source srcset="assets/img/rosie02.jpg" media="(min-width:600px)">
-                                    <img src="assets/img/rosie01.jpg" srcset="assets/img/rosie01.jpg 1x, assets/img/rosie02.jpg 2x, 
-                                    assets/img/rosie03.jpg 3x" alt="브루노가가">
-                                </picture>
+                                        <div class="next-img">
+                                            <img src="assets/img/homesweethome01.jpg" alt="G-DRAGON">
+                                        </div>
+                                        <div class="next-tit">
+                                            <span class="nt-stit">[싱글]</span>
+                                            <h3 class="nt-tit">HOME SWEET HOME</h3>
+                                            <p class="nt-desc">G-DRAGON(feat.태양,대성)</p>
+                                        </div>
+                                    </div>
+                                    <!-- 5번 -->
+                                    <div class="next"
+                                        data-title="toxic till the end"
+                                        data-artist="로제 (ROSE’)"
+                                        data-img="assets/img/rosie01.jpg"
+                                        data-audio="assets/audio/toxictilltheend.m4a">
+
+                                        <div class="next-img">
+                                            <img src="assets/img/rosie01.jpg" alt="로제">
+                                        </div>
+                                        <div class="next-tit">
+                                            <span class="nt-stit">[정규]</span>
+                                            <h3 class="nt-tit">rosie</h3>
+                                            <p class="nt-desc">로제 (ROSE’)</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="next-tit">
-                                <span class="nt-stit">[정규]</span>
-                                <h3 class="nt-tit">rosie</h3>
-                                <p class="nt-desc">로제 (ROSE’)</p>
+
+                            <!-- 두 번째 그룹 -->
+                            <div class="swiper-slide">
+                                <div class="next-wrap">
+                                    <!-- 6번 -->
+                                    <div class="next">
+                                        <div class="next-img">
+                                            <img src="assets/img/qwer01.jpg" alt="GWER">
+                                        </div>
+                                        <div class="next-tit">
+                                            <span class="nt-stit">[EP]</span>
+                                            <h3 class="nt-tit">Algorithm's Blossom</h3>
+                                            <p class="nt-desc">GWER</p>
+                                        </div>
+                                    </div>
+                                    <!-- 7번 -->
+                                    <div class="next">
+                                        <div class="next-img">
+                                            <img src="assets/img/jihwan01.jpg" alt="손손희">
+                                        </div>
+                                        <div class="next-tit">
+                                            <span class="nt-stit">[싱글]</span>
+                                            <h3 class="nt-tit">슬픈 초대장</h3>
+                                            <p class="nt-desc">순순희(지환)</p>
+                                        </div>
+                                    </div>
+                                    <!-- 8번 -->
+                                    <div class="next">
+                                        <div class="next-img">
+                                            <img src="assets/img/ooli01.jpg" alt="WOODOZ">
+                                        </div>
+                                        <div class="next-tit">
+                                            <span class="nt-stit">[EP]</span>
+                                            <h3 class="nt-tit">OO-LI</h3>
+                                            <p class="nt-desc">WOODZ</p>
+                                        </div>
+                                    </div>
+                                    <!-- 9번 -->
+                                    <div class="next">
+                                        <div class="next-img">
+                                            <img src="assets/img/changsub01.jpg" alt="천상연">
+                                        </div>
+                                        <div class="next-tit">
+                                            <span class="nt-stit">[싱글]</span>
+                                            <h3 class="nt-tit">천상연</h3>
+                                            <p class="nt-desc">웹툰 '선녀외전' X 이창섭</p>
+                                        </div>
+                                    </div>
+                                    <!-- 10번 -->
+                                    <div class="next">
+                                        <div class="next-img">
+                                            <img src="assets/img/roykim01.jpg" alt="로니">
+                                        </div>
+                                        <div class="next-tit">
+                                            <span class="nt-stit">[싱글]</span>
+                                            <h3 class="nt-tit">내가 사랑이 뭐냐고 물어본다면</h3>
+                                            <p class="nt-desc">로이킴</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </article>
-        <!--nextM-->
 
+        <!-- 플레이어 -->
         <article class="playlistM">
             <div class="container">
                 <div class="playlist">
                     <div class="playlist-img" 
                         <picture>
-                            <source srcset="assets/img/rosieplay03.jpg" media="(min-width:800px)">
                             <source srcset="assets/img/rosieplay02.jpg" media="(min-width:600px)">
-                            <img src="assets/img/rosieplay01.jpg" srcset="assets/img/rosieplay01.jpg 1x, assets/img/rosieplay02.jpg 2x, 
-                                assets/img/rosieplay03.jpg 3x" alt="아이브">
+                            <source srcset="assets/img/rosieplay03.jpg" media="(min-width:800px)">
+                            <img id="player-img" src="assets/img/rosieplay01.jpg" alt="앨범 이미지">
                         </picture>
                     </div>
                     <div class="playlist-title">
-                        <span class="pt-stit">toxic till the end</span>
-                        <span class="pt-tit">(rose’)</span>
+                        <span class="pt-stit" id="player-title">toxic till the end</span>
+                        <span class="pt-tit" id="player-artist">(rose’)</span>
                     </div>
 
                     <div class="playlist-controls">
-                        <button class="prev"><img src="assets/img/Polygonduby01.png" alt="이전"></button>
-                        <button class="play"><img src="assets/img/Polygon01.png" alt="재생"></button>
-                        <button class="next"><img src="assets/img/Polygondub01.png" alt="다음"></button>
+                        <button id="prevBtn"><img src="assets/img/Polygonduby01.png" alt="이전"></button>
+                        <button id="playPauseBtn"><img src="assets/img/Polygon01.png" alt="재생"></button>
+                        <button id="nextBtn"><img src="assets/img/Polygondub01.png" alt="다음"></button>
                     </div>
+                    <!-- 오디오 요소 -->
+                    <audio id="audioPlayer"></audio>
                 </div>
             </div>
         </article>
         <!--playlistM-->
 
-        <article class="menuM">
+        <!-- 하단 메뉴바 -->
+        <footer class="footer">
             <div class="container">
-                <div class="menubar">
-                    <div class="menubar01">
+                <div class="menuM">
+                    <div class="menubar">
                         <button class="musicbox"><img src="assets/img/musicbox_t.jpg" alt="보관함"></button>
                         <button class="heart"><img src="assets/img/heart_t.jpg" alt="for you"></button>
                         <button class="look"><img src="assets/img/look_t.jpg" alt="둘러보기"></button>
@@ -242,7 +382,7 @@
                     </div>
                 </div>
             </div>
-        </article>
+        </footer>
         <!--menuM-->
     </section>
 
