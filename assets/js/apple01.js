@@ -44,7 +44,7 @@ function initPlayer() {
 // 🎶 노래 리스트 초기화
 function initSongs() {
     let songs = [];
-    document.querySelectorAll(".next").forEach((item, index) => {
+    document.querySelectorAll(".next, .recent").forEach((item, index) => {
         let song = {
             title: item.dataset.title || "Unknown Title",
             artist: item.dataset.artist || "Unknown Artist",
@@ -74,7 +74,6 @@ function playSong(index, songs) {
         return;
     }
 
-    // 🔍 디버깅용 콘솔 로그 추가
     console.log("🎵 재생할 곡:", song.title);
     console.log("🎤 가수:", song.artist);
     console.log("🖼 앨범 이미지 경로:", song.img);
@@ -86,21 +85,23 @@ function playSong(index, songs) {
     audioPlayer.src = song.audio;
     audioPlayer.load();
     audioPlayer.play();
-    playPauseBtn.innerHTML = '<img src="assets/img/playbtn.png" alt="재생">';
+
+    // ✅ CSS 클래스를 이용해 버튼 변경
+    playPauseBtn.classList.remove("paused");
 }
 
 // ⏯️ 재생/일시정지 토글
 function togglePlay() {
     let { audioPlayer, playPauseBtn } = initPlayer();
+    
     if (audioPlayer.paused) {
         audioPlayer.play();
-        playPauseBtn.innerHTML = '<img src="assets/img/playbtn.png" alt="재생" style="width: 100px; height: 100px;">';
+        playPauseBtn.classList.remove("paused"); // 🔄 재생 중이면 "paused" 클래스 제거 → 플레이 버튼 표시
     } else {
         audioPlayer.pause();
-        playPauseBtn.innerHTML = '<img src="assets/img/Polygon01.png" alt="재생">';
+        playPauseBtn.classList.add("paused"); // 🔄 일시정지 상태면 "paused" 클래스 추가 → 일시정지 버튼 표시
     }
 }
-
 
 // ⏮️ 이전 곡 재생
 function playPrev(songs, currentSongIndex) {

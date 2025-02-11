@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/appleplayer.css">
+
+     <!-- js -->
+     <script src="assets/js/appleplayer.js"></script>
+</head>
+<body>
+
+    <div class="music-player">
+        <h4 class="playlist-title">Music Playlist</h4>
+
+        <div class="player-header">
+            <div class="song-info">
+                <h2>REBEL HEART</h2>
+                <p>IVE(아이브)</p>
+            </div>
+            <div class="icons">
+                <span class="menu">⋮</span>
+            </div>
+        </div>
+
+        <div class="album-cover">
+            <img src="assets/img/rebel_heart01.jpg" alt="앨범 이미지">
+        </div>
+
+        <div class="like-section">
+            <span class="heart">♡</span>
+            <span class="like-count">63,176</span>
+        </div>
+
+        <div class="lyrics">
+            <p>시작은 항상 다 이룬 것처럼<br>
+               엔딩 마치 승리한 것처럼<br>
+               겁내지 않고 마음을 쏟을래<br>
+               내 모양대로</p>
+        </div>
+
+        <div class="progress-container">
+            <input type="range" id="progress-bar" value="0">
+        </div>
+
+        <div class="player-controls">
+            <button id="prevBtn">⏮️</button>
+            <button id="playPauseBtn">▶️</button>
+            <button id="nextBtn">⏭️</button>
+        </div>
+
+        <audio id="audioPlayer">
+            <source src="assets/audio/rebelheart.m4a" type="audio/mpeg">
+        </audio>
+    </div>

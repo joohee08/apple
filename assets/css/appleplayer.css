@@ -1,0 +1,192 @@
+/*
+.container {width: 1000px; margin: 0 auto;}
+
+
+.row {position: relative; margin: 30px 55px;}
+
+
+
+#player-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.song-info h2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.song-info p {
+    font-size: 15px;
+    color: #666;
+    margin: 5px 0;
+}
+
+.icons .menu {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.icons .drop img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.album-cover img {
+    width: 500px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.like-section {
+    margin-top: 10px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heart {
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.lyrics {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.progress-container {
+    width: 100%;
+    margin: 10px 0;
+}
+
+#progress-bar {
+    width: 100%;
+    -webkit-appearance: none;
+    height: 5px;
+    background: #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.player-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.player-controls button {
+    font-size: 20px;
+    background: none;
+    border: none;
+    margin: 0 15px;
+    cursor: pointer;
+}
+*/
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.music-player {
+    width: 350px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.playlist-title {
+    font-size: 12px;
+    color: #aaa;
+    text-align: left;
+}
+
+.player-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.song-info h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.song-info p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}
+
+.icons .menu {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.album-cover img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.like-section {
+    margin-top: 10px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heart {
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.lyrics {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.progress-container {
+    width: 100%;
+    margin: 10px 0;
+}
+
+#progress-bar {
+    width: 100%;
+    -webkit-appearance: none;
+    height: 5px;
+    background: #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.player-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.player-controls button {
+    font-size: 20px;
+    background: none;
+    border: none;
+    margin: 0 15px;
+    cursor: pointer;
+}

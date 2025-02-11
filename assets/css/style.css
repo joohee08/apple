@@ -251,12 +251,17 @@
 .playlistM .playlist .playlist-controls {
     display: flex;
     align-items: center;
-    margin-right: 35px;
+    margin-right: 45px;
 }
 
 .playlistM .playlist .playlist-controls button {
+    width: 50px;  
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: none;
-    margin: 0 5px;
+    margin: -23px 1px;
     cursor: pointer;
 }
 
@@ -264,6 +269,23 @@
     width: 24px;
     height: 24px;
 }
+
+#playPauseBtn {
+    width: 70px;
+    height: 70px;
+    background: url('../img/playbtn.png') no-repeat center;
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+}
+
+#playPauseBtn.paused {
+    width: 70px;
+    height: 70px;
+    background: url('../img/Polygon01.png') no-repeat center;
+    background-size: contain;
+}
+
 
 /* 메뉴바 */
 .menubar {
