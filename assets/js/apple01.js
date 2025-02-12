@@ -144,27 +144,50 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    const songs = document.querySelectorAll(" .recent"); // 최근 재생목록 & 다음 프로그램 목록
+document.addEventListener("DOMContentLoaded", () => {
+    document.addEventListener("click", (event) => {
+        const playlistM = event.target.closest(".playlistM");
+        const controls = event.target.closest(".playlist-controls");
 
-    songs.forEach(song => {
-        song.addEventListener("click", function () {
-            // 🎵 곡 정보 가져오기
-            const songData = {
-                title: song.getAttribute("data-title"),
-                artist: song.getAttribute("data-artist"),
-                img: song.getAttribute("data-img"),
-                audio: song.getAttribute("data-audio")
-            };
+           // 플레이어 컨트롤 버튼을 클릭한 경우 실행하지 않음
+           if (!playlistM || controls) return;
 
-            // 🎶 곡 정보를 sessionStorage에 저장
-            sessionStorage.setItem("currentSong", JSON.stringify(songData));
+        console.log("🎵 플레이어 클릭됨 ✅");
 
-            // 🎧 appleplayer.html로 이동 (새 페이지에서 재생)
-            window.location.href = "appleplayer.html";
-        });
+        const songData = getCurrentSongData();
+        saveSongDataToSession(songData);
+        navigateToPlayerPage();
     });
 });
 
+function getCurrentSongData() {
+
+    const imgSrc = document.getElementById("player-img")?.src;
+    
+    console.log("🎵 현재 곡 데이터 가져오기");
+    console.log("🎶 제목:", document.getElementById("player-title")?.textContent);
+    console.log("🎤 아티스트:", document.getElementById("player-artist")?.textContent);
+    console.log("🖼 이미지 경로:", imgSrc);
+    return {
+        title: document.getElementById("player-title")?.textContent || "Unknown Title",
+        artist: document.getElementById("player-artist")?.textContent || "Unknown Artist",
+        img: document.getElementById("player-img")?.src || "assets/img/default.jpg",
+        audio: document.getElementById("audioPlayer")?.src || "assets/audio/default.mp3"
+    };
+}
+
+/**
+ * 🎵 곡 정보를 `sessionStorage`에 저장
+ */
+function saveSongDataToSession(songData) {
+    sessionStorage.setItem("currentSong", JSON.stringify(songData));
+}
+
+/**
+ * 🔄 새로운 페이지(`appleplayer.html`)로 이동 (URL 짧게 유지)
+ */
+function navigateToPlayerPage() {
+    window.location.href = "appleplayer.html"; // ✅ URL이 간단해짐
+}
 
 

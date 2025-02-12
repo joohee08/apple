@@ -106,8 +106,17 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
     }
 
-    // 🎧 플레이어 UI 업데이트
-    document.getElementById("player-img").src = songData.img;
+    console.log("🎵 appleplayer.html에서 가져온 데이터:", songData);
+
+    const playerImg = document.getElementById("player-img");
+
+    if (!playerImg) {
+        console.error("🚨 player-img 요소를 찾을 수 없습니다!");
+        return;
+    }
+
+    playerImg.src = songData.img; // 이미지 적용
+
     document.getElementById("player-title").textContent = songData.title;
     document.getElementById("player-artist").textContent = songData.artist;
 
