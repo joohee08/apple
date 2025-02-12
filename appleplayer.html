@@ -1,58 +1,104 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Player</title>
 
     <!-- css -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/appleplayer.css">
 
-     <!-- js -->
-     <script src="assets/js/appleplayer.js"></script>
+    <!-- js -->
+    <script src="assets/js/appleplayer.js"></script>
 </head>
+
 <body>
 
-    <div class="music-player">
-        <h4 class="playlist-title">Music Playlist</h4>
-
-        <div class="player-header">
-            <div class="song-info">
-                <h2>REBEL HEART</h2>
-                <p>IVE(아이브)</p>
+    <header id="player-header">
+        <div class="container">
+            <div class="row">
+                <div class="song-info">
+                    <h2 id="player-title">REBEL HEART</h2>
+                    <p id="player-artist">IVE(아이브)</p>
+                </div>
+                <div class="icons">
+                    <span class="menu">⋮</span>
+                    <span class="drop"><img src="assets/img2/down.png" alt="드롭다운"></span>
+                </div>
             </div>
-            <div class="icons">
-                <span class="menu">⋮</span>
+        </div>
+    </header>
+    <!-- header -->
+
+    <section class="musicarea">
+        <article class="album">
+            <div class="container">
+                <div class="row">
+                    <div class="albumarea">
+
+                        <picture>
+                            <source srcset="assets/img/rebel_heart03.jpg">
+                            <source srcset="assets/img/rebel_heart02.jpg">
+                            <img id="player-img" src="assets/img/rebel_heart01.jpg"
+                                srcset="assets/img/rebel_heart01.jpg 1x, assets/img/rebel_heart02.jpg 2x, assets/img/rebel_heart03.jpg 3x"
+                                alt="앨범 이미지">
+                        </picture>
+
+                        <div class="like-section">
+                            <span class="heart">♡</span>
+                            <span class="like-count">63,176</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+        </article>
 
-        <div class="album-cover">
-            <img src="assets/img/rebel_heart01.jpg" alt="앨범 이미지">
-        </div>
+        <article class="lyrics">
+            <div class="container">
+                <div class="row">
+                    <div class="song-lyrics">
+                        <p>시작은 항상 다 이룬 것처럼<br>
+                            엔딩 마치 승리한 것처럼<br>
+                            겁내지 않고 마음을 쏟을래<br>
+                            내 모양대로
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
 
-        <div class="like-section">
-            <span class="heart">♡</span>
-            <span class="like-count">63,176</span>
+        <article class="playermusic">
+            <div class="container">
+                <div class="row">
+                    <div class="playerarea">
+                        <div class="progress-container">
+                            <input type="range" id="progress-bar" value="0">
+                        </div>
+        
+                        <div class="player-controls">
+                            <button id="repeatBtn"><img src="assets/img2/retry.png" alt="반복"></button>
+                            <button id="prevBtn"><img src="assets/img2/before.png" alt="이전"></button>
+        
+                            <!-- 중앙에 위치할 재생/멈춤 버튼 -->
+                            <div class="play-container">
+                                <button id="playPauseBtn">
+                                    <img src="assets/img2/stopbtn.png" id="playPauseImg" class="playing" alt="멈춤">
+                                </button>
+                            </div>
+        
+                            <button id="nextBtn"><img src="assets/img2/next.png" alt="다음"></button>
+                            <button id="shuffleBtn"><img src="assets/img2/shuffle.png" alt="셔플"></button>
+                        </div>
+        
+                        <audio id="audioPlayer">
+                            <source src="assets/audio/rebelheart.m4a" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </article>
         </div>
-
-        <div class="lyrics">
-            <p>시작은 항상 다 이룬 것처럼<br>
-               엔딩 마치 승리한 것처럼<br>
-               겁내지 않고 마음을 쏟을래<br>
-               내 모양대로</p>
-        </div>
-
-        <div class="progress-container">
-            <input type="range" id="progress-bar" value="0">
-        </div>
-
-        <div class="player-controls">
-            <button id="prevBtn">⏮️</button>
-            <button id="playPauseBtn">▶️</button>
-            <button id="nextBtn">⏭️</button>
-        </div>
-
-        <audio id="audioPlayer">
-            <source src="assets/audio/rebelheart.m4a" type="audio/mpeg">
-        </audio>
-    </div>
+    </section>

@@ -251,7 +251,7 @@
 .playlistM .playlist .playlist-controls {
     display: flex;
     align-items: center;
-    margin-right: 45px;
+    margin-right: 29px;
 }
 
 .playlistM .playlist .playlist-controls button {

@@ -1,4 +1,5 @@
-// 🎵 Swiper 초기화
+
+//Swiper 초기화
 function initSwipers() {
     new Swiper(".mySwiper", {
         loop: true,
@@ -23,7 +24,7 @@ function initSwipers() {
     });
 }
 
-// 🎧 음악 플레이어 초기화
+//음악 플레이어 초기화
 function initPlayer() {
     let audioPlayer = document.getElementById("audioPlayer");
     let playerImg = document.getElementById("player-img");
@@ -41,7 +42,7 @@ function initPlayer() {
     return { audioPlayer, playerImg, playerTitle, playerArtist, playPauseBtn, prevBtn, nextBtn };
 }
 
-// 🎶 노래 리스트 초기화
+//노래 리스트 초기화
 function initSongs() {
     let songs = [];
     document.querySelectorAll(".next, .recent").forEach((item, index) => {
@@ -64,7 +65,7 @@ function initSongs() {
     return songs;
 }
 
-// ▶️ 노래 재생 함수
+//노래 재생 함수
 function playSong(index, songs) {
     let { audioPlayer, playerImg, playerTitle, playerArtist, playPauseBtn } = initPlayer();
     let song = songs[index];
@@ -86,31 +87,31 @@ function playSong(index, songs) {
     audioPlayer.load();
     audioPlayer.play();
 
-    // ✅ CSS 클래스를 이용해 버튼 변경
+    //CSS 클래스를 이용해 버튼 변경
     playPauseBtn.classList.remove("paused");
 }
 
-// ⏯️ 재생/일시정지 토글
+//재생/일시정지 토글
 function togglePlay() {
     let { audioPlayer, playPauseBtn } = initPlayer();
     
     if (audioPlayer.paused) {
         audioPlayer.play();
-        playPauseBtn.classList.remove("paused"); // 🔄 재생 중이면 "paused" 클래스 제거 → 플레이 버튼 표시
+        playPauseBtn.classList.remove("paused"); //재생 중이면 "paused" 클래스 제거 → 플레이 버튼 표시
     } else {
         audioPlayer.pause();
-        playPauseBtn.classList.add("paused"); // 🔄 일시정지 상태면 "paused" 클래스 추가 → 일시정지 버튼 표시
+        playPauseBtn.classList.add("paused"); //일시정지 상태면 "paused" 클래스 추가 → 일시정지 버튼 표시
     }
 }
 
-// ⏮️ 이전 곡 재생
+//이전 곡 재생
 function playPrev(songs, currentSongIndex) {
     currentSongIndex = (currentSongIndex - 1 + songs.length) % songs.length;
     playSong(currentSongIndex, songs);
     return currentSongIndex;
 }
 
-// ⏭️ 다음 곡 재생
+//다음 곡 재생
 function playNext(songs, currentSongIndex) {
     currentSongIndex = (currentSongIndex + 1) % songs.length;
     playSong(currentSongIndex, songs);
@@ -141,6 +142,29 @@ document.addEventListener("DOMContentLoaded", function () {
     audioPlayer.addEventListener("ended", function () {
         currentSongIndex = playNext(songs, currentSongIndex);
     });
-
-    console.log("🎵 음악 플레이어 및 Swiper 초기화 완료 ✅");
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const songs = document.querySelectorAll(" .recent"); // 최근 재생목록 & 다음 프로그램 목록
+
+    songs.forEach(song => {
+        song.addEventListener("click", function () {
+            // 🎵 곡 정보 가져오기
+            const songData = {
+                title: song.getAttribute("data-title"),
+                artist: song.getAttribute("data-artist"),
+                img: song.getAttribute("data-img"),
+                audio: song.getAttribute("data-audio")
+            };
+
+            // 🎶 곡 정보를 sessionStorage에 저장
+            sessionStorage.setItem("currentSong", JSON.stringify(songData));
+
+            // 🎧 appleplayer.html로 이동 (새 페이지에서 재생)
+            window.location.href = "appleplayer.html";
+        });
+    });
+});
+
+
+
