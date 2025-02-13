@@ -76,10 +76,11 @@
     justify-content: center;
 }
 
-.heart {
+#likeBtn {
     font-size: 24px;
     cursor: pointer;
     margin-right: 5px;
+    border: none;
 }
 
 /* 가사 */
@@ -126,17 +127,24 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 10px; 
+    gap: 10px;
 }
 
-#progress-bar {
-    width: 100%; /* 부모 요소에 맞게 조정 */
-    max-width: 400px;
-    -webkit-appearance: none;
-    height: 5px;
-    background: black; /* 바탕 검은색 */
+#currentTimeDisplay,
+#durationDisplay {
+    font-size: 14px;
+    color: #333;
+    white-space: nowrap; /* 시간 줄바꿈 방지 */
+}
+
+  #progress-bar {
+    flex-grow: 1; /* 남는 공간 다 채우기 */
+    -webkit-appearance: none; /* iOS 기본 스타일 제거 */
+    height: 6px;
+    background: #ddd;
     border-radius: 5px;
-    cursor: pointer;
     outline: none;
+    cursor: pointer;
 }
 
 /* 슬라이더 진행된 부분 색상 (Webkit 기반 브라우저 - Chrome, Edge, Safari) */

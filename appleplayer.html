@@ -42,9 +42,11 @@
                         <img id="player-img" src="assets/img/rebel_heart01.jpg" alt="앨범 이미지">
 
                         <div class="like-section">
-                            <span class="heart">♡</span>
-                            <span class="like-count">63,176</span>
+                            <button id="likeBtn">♡</button>
+                            <span class="like-count">0</span>
                         </div>
+                        <!-- 관리자 좋아요 초기화 버튼 -->
+                        <button id="resetLikesBtn" style="display: none;">초기화</button>
                     </div>
                 </div>
             </div>
@@ -54,11 +56,7 @@
             <div class="container">
                 <div class="row">
                     <div class="song-lyrics">
-                        <p>시작은 항상 다 이룬 것처럼<br>
-                            엔딩 마치 승리한 것처럼<br>
-                            겁내지 않고 마음을 쏟을래<br>
-                            내 모양대로
-                        </p>
+                        <p>가사가 여기에 들어갑니다.</p>
                     </div>
                 </div>
             </div>
@@ -69,7 +67,9 @@
                 <div class="row">
                     <div class="playerarea">
                         <div class="progress-container">
-                            <input type="range" id="progress-bar" value="0">
+                            <span id="currentTimeDisplay">0:00</span>
+                            <input type="range" id="progress-bar" value="0" min="0" max="100" step="0.1">
+                            <span id="durationDisplay">0:00</span>
                         </div>
         
                         <div class="player-controls">

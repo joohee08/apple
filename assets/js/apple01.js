@@ -43,114 +43,100 @@ function initPlayer() {
 }
 
 //노래 리스트 초기화
-function initSongs() {
-    let songs = [];
-    document.querySelectorAll(".next, .recent").forEach((item, index) => {
-        let song = {
-            title: item.dataset.title || "Unknown Title",
-            artist: item.dataset.artist || "Unknown Artist",
-            img: item.dataset.img || "assets/img/default.jpg",
-            audio: item.dataset.audio || "assets/audio/default.mp3" // 기본 mp3 파일 설정
-        };
-        songs.push(song);
-
-         // 🔍 song 데이터 확인
-         console.log(`🎵 [${index + 1}] 곡 정보:`, song);
-
-        // 🎵 노래 클릭 시 플레이어 업데이트
-        item.addEventListener("click", function () {
-            playSong(index, songs);
-        });
-    });
-    return songs;
+// JSON에서 노래 데이터 로드
+async function loadSongs() {
+    try {
+        const response = await fetch('assets/data/songs.json');
+        const songs = await response.json();
+        console.log('🎵 로드된 노래 데이터:', songs);
+        return songs;
+    } catch (error) {
+        console.error('🚨 노래 데이터를 불러오는 중 오류 발생:', error);
+    }
 }
 
-//노래 재생 함수
-function playSong(index, songs) {
-    let { audioPlayer, playerImg, playerTitle, playerArtist, playPauseBtn } = initPlayer();
-    let song = songs[index];
-
-    if (!song || !song.audio) {
-        console.error("오디오 파일을 찾을 수 없습니다.");
-        return;
-    }
-
-    console.log("🎵 재생할 곡:", song.title);
-    console.log("🎤 가수:", song.artist);
-    console.log("🖼 앨범 이미지 경로:", song.img);
-    console.log("🔊 오디오 경로:", song.audio);
+// 노래 선택 시 재생
+function playSong(song) {
+    const { audioPlayer, playerImg, playerTitle, playerArtist, playPauseBtn } = initPlayer();
 
     playerImg.src = song.img;
     playerTitle.textContent = song.title;
     playerArtist.textContent = song.artist;
     audioPlayer.src = song.audio;
+
     audioPlayer.load();
     audioPlayer.play();
 
-    //CSS 클래스를 이용해 버튼 변경
     playPauseBtn.classList.remove("paused");
+
+    // 현재 재생 중인 노래 sessionStorage에 저장 (재생 시간 0초로)
+    const songData = { ...song, currentTime: 0 };
+    sessionStorage.setItem("currentSong", JSON.stringify(songData));
 }
 
-//재생/일시정지 토글
+// HTML 요소와 JSON 데이터 매칭해서 클릭 이벤트 연결
+function initSongs(songs) {
+    document.querySelectorAll(".next, .recent").forEach((item) => {
+        const title = item.dataset.title;
+        const song = songs.find((s) => s.title === title);
+
+        if (!song) {
+            console.warn(`🔍 데이터에 없는 곡: ${title}`);
+            return;
+        }
+
+        item.addEventListener("click", function () {
+            playSong(song);
+        });
+    });
+}
+
+// 재생/일시정지 토글
 function togglePlay() {
     let { audioPlayer, playPauseBtn } = initPlayer();
-    
     if (audioPlayer.paused) {
         audioPlayer.play();
-        playPauseBtn.classList.remove("paused"); //재생 중이면 "paused" 클래스 제거 → 플레이 버튼 표시
+        playPauseBtn.classList.remove("paused");
     } else {
         audioPlayer.pause();
-        playPauseBtn.classList.add("paused"); //일시정지 상태면 "paused" 클래스 추가 → 일시정지 버튼 표시
+        playPauseBtn.classList.add("paused");
     }
 }
 
-//이전 곡 재생
-function playPrev(songs, currentSongIndex) {
-    currentSongIndex = (currentSongIndex - 1 + songs.length) % songs.length;
-    playSong(currentSongIndex, songs);
-    return currentSongIndex;
-}
-
-//다음 곡 재생
-function playNext(songs, currentSongIndex) {
-    currentSongIndex = (currentSongIndex + 1) % songs.length;
-    playSong(currentSongIndex, songs);
-    return currentSongIndex;
-}
-
 // 전체 초기화 실행
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", async function () {
     initSwipers();
-    
-    let songs = initSongs();
-    let currentSongIndex = 0;
+
+    const songs = await loadSongs();
+
+    initSongs(songs);
 
     let { playPauseBtn, prevBtn, nextBtn, audioPlayer } = initPlayer();
 
-    playPauseBtn.addEventListener("click", function () {
-        togglePlay();
-    });
+    playPauseBtn.addEventListener("click", togglePlay);
 
+    // 이전/다음 곡 로직은 필요하면 나중에 확장 가능
     prevBtn.addEventListener("click", function () {
-        currentSongIndex = playPrev(songs, currentSongIndex);
+        console.log("이전 곡 기능은 필요시 구현");
     });
 
     nextBtn.addEventListener("click", function () {
-        currentSongIndex = playNext(songs, currentSongIndex);
+        console.log("다음 곡 기능은 필요시 구현");
     });
 
+    // 자동 다음 곡 기능
     audioPlayer.addEventListener("ended", function () {
-        currentSongIndex = playNext(songs, currentSongIndex);
+        console.log("다음 곡 자동재생 기능 필요시 구현");
     });
 });
 
+// 현재 곡 데이터 sessionStorage에 저장 (플레이어 클릭시)
 document.addEventListener("DOMContentLoaded", () => {
     document.addEventListener("click", (event) => {
         const playlistM = event.target.closest(".playlistM");
         const controls = event.target.closest(".playlist-controls");
 
-           // 플레이어 컨트롤 버튼을 클릭한 경우 실행하지 않음
-           if (!playlistM || controls) return;
+        if (!playlistM || controls) return;
 
         console.log("🎵 플레이어 클릭됨 ✅");
 
@@ -161,33 +147,22 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function getCurrentSongData() {
+    const audioPlayer = document.getElementById("audioPlayer");
+    const currentTime = audioPlayer ? audioPlayer.currentTime : 0;
 
-    const imgSrc = document.getElementById("player-img")?.src;
-    
-    console.log("🎵 현재 곡 데이터 가져오기");
-    console.log("🎶 제목:", document.getElementById("player-title")?.textContent);
-    console.log("🎤 아티스트:", document.getElementById("player-artist")?.textContent);
-    console.log("🖼 이미지 경로:", imgSrc);
     return {
-        title: document.getElementById("player-title")?.textContent || "Unknown Title",
-        artist: document.getElementById("player-artist")?.textContent || "Unknown Artist",
-        img: document.getElementById("player-img")?.src || "assets/img/default.jpg",
-        audio: document.getElementById("audioPlayer")?.src || "assets/audio/default.mp3"
+        title: document.getElementById("player-title").textContent,
+        artist: document.getElementById("player-artist").textContent,
+        img: document.getElementById("player-img").src,
+        audio: audioPlayer.src,
+        currentTime: currentTime
     };
 }
 
-/**
- * 🎵 곡 정보를 `sessionStorage`에 저장
- */
 function saveSongDataToSession(songData) {
     sessionStorage.setItem("currentSong", JSON.stringify(songData));
 }
 
-/**
- * 🔄 새로운 페이지(`appleplayer.html`)로 이동 (URL 짧게 유지)
- */
 function navigateToPlayerPage() {
-    window.location.href = "appleplayer.html"; // ✅ URL이 간단해짐
+    window.location.href = "appleplayer.html";
 }
-
-
