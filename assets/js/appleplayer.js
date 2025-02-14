@@ -108,6 +108,26 @@ document.addEventListener("DOMContentLoaded", async function () {
         alert('좋아요 초기화 완료!');
     });
 
+    function getCurrentLyricsBlock(currentTime, lyrics) {
+        // 현재 시간을 기준으로 재생 중인 가사 블록 찾기
+        let currentBlock = null;
+    
+        for (let i = 0; i < lyrics.length; i++) {
+            const block = lyrics[i];
+            const nextBlock = lyrics[i + 1];
+    
+            // 현재 시간이 블록의 time보다 크거나 같고,
+            // 다음 블록 시간이 없거나, 현재 시간이 다음 블록보다 작으면 해당 블록!
+            if (currentTime >= block.time && (!nextBlock || currentTime < nextBlock.time)) {
+                currentBlock = block;
+                break;
+            }
+        }
+    
+        return currentBlock;
+    }
+    
+
     // ▶️⏸️ 재생 및 일시정지 토글
     playPauseBtn.addEventListener("click", function () {
         if (audioPlayer.paused) {
@@ -158,8 +178,16 @@ document.addEventListener("DOMContentLoaded", async function () {
     
             currentTimeDisplay.textContent = formatTime(audioPlayer.currentTime);
             durationDisplay.textContent = formatTime(audioPlayer.duration);
+
+            // 🔥 현재 시간에 맞는 가사 블록 찾기
+        const currentLyricsBlock = getCurrentLyricsBlock(audioPlayer.currentTime, currentSong.lyrics);
+
+        if (currentLyricsBlock) {
+            // 🔥 가사 화면 업데이트
+            lyricsContainer.innerHTML = currentLyricsBlock.lines.join("<br>");
         }
-    });
+    }
+});
     
 
     // 🎚️ 진행 바 이동
