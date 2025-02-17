@@ -5,75 +5,93 @@
         "img": "assets/img/rebel_heart.jpg",
         "audio": "assets/audio/rebelheart.m4a",
         "lyrics": [
+          {"time": 0, "lines": [
           "시작은 항상 다 이룬 것처럼",
           "엔딩은 마치 승리한 것처럼",
           "겁내지 않고 마음을 쏟을래",
-          "내 모양대로",
-          "",
+          "내 모양대로"
+          ]},
+          {"time": 18, "lines": [
           "이제 더 이상 신경 쓰지 않아",
           "어디에서도 내 맘을 지키기",
           "오해 받을 땐 자유에 맡겨둘래",
-          "다 알게 될 거니까",
-          "",
+          "다 알게 될 거니까"
+          ]},
+          {"time": 33, "lines": [
           "So you can",
-          "",
           "Love me, hate me",
           "You will never be never be never be me",
-          "Try me, I'll break free",
+          "Try me, I'll break free"
+          ]},
+          {"time": 46, "lines": [
           "You will never be never be never be me",
-          "",
           "We are rebels in our heart,",
           "Rebels in our heart",
-          "We are rebels in our heart",
+          "We are rebels in our heart"
+          ]},
+          {"time": 56, "lines": [
           "We are rebels in our heart,",
           "꺾이지 않아",
           "We are rebels in our heart",
-          "",
-          "너는 어디가 조금 부족해",
+          "너는 어디가 조금 부족해"
+          ]},
+          {"time": 67, "lines": [
           "너는 거기가 뭔가 좀 넘쳐",
           "I don't care 뭐든 말은 참 쉽지",
           "그래 실행이 어려운 거야",
-          "",
-          "Do it, move it, do it",
+          "Do it, move it, do it"
+          ]},
+          {"time": 75, "lines": [
           "우린 그냥 할게",
           "내 갈 길은 멀고",
           "그 위에는 드라마가 있어",
-          "",
-          "또 외로움이 너무 길어지는 밤엔",
+          "또 외로움이 너무 길어지는 밤엔"
+          ]},
+          {"time": 84, "lines": [
           "그 맘을 쏘아 올려",
-          "",
           "Love me, hate me",
           "You will never be never be never be me",
-          "Try me, I'll break free",
+          "Try me, I'll break free"
+          ]},
+          {"time": 102, "lines": [
           "You will never be never be never be me",
-          "",
           "We are rebels in our heart,",
           "Rebels in our heart",
-          "We are rebels in our heart",
+          "We are rebels in our heart"
+          ]},
+          {"time": 112, "lines": [
           "We are rebels in our heart,",
           "꺾이지 않아",
           "We are rebels in our heart",
-          "",
-          "Rebels in our heart!",
-          "",
+          "Rebels in our heart!"
+          ]},
+          {"time": 120, "lines": [
+            "Rebels in our heart!"
+          ]},
+          {"time": 137, "lines": [
           "우린 따로 이유를 묻지 않고",
           "서로가 필요할 때가 있어",
           "그런 맘이 어떤 건지 잘 알기에",
-          "영원을 바라는 사이보단",
+          "영원을 바라는 사이보단"
+          ]},
+          {"time": 146, "lines": [
           "지금을 이해해주고 싶어",
           "We will always be the rebels",
-          "",
           "Come, join as who you are",
-          "We are rebels, we are one",
+          "We are rebels, we are one"
+          ]},
+          {"time": 161, "lines": [
           "이 마음만으로",
           "We are rebels, we are one",
-          "",
           "We are rebels in our heart,",
-          "Rebels in our heart",
+          "Rebels in our heart"
+          ]},
+          {"time": 173, "lines": [
           "We are rebels in our heart",
           "We are rebels in our heart,",
           "꺾이지 않아",
           "We are rebels in our heart"
+          ]}
         ],
         "likes": 0
       },
@@ -185,47 +203,52 @@
       "img": "assets/img/woody.jpg",
       "audio": "assets/audio/desertflower.m4a",
      "lyrics": [
+          {"time": 0, "lines": [
           "아침에 눈 뜨는 게 너무 행복해졌어",
           "널 사랑한다 말할 수 있어서 하늘에 감사해",
-          "",
           "네 번의 계절을 너와 함께할게",
-          "평생토록 더 오래도록 더 영원토록",
-          "",
+          "평생토록 더 오래도록 더 영원토록"
+          ]},
+          {"time": 48, "lines": [
           "음악처럼 꿈처럼",
           "매일 새롭게 사랑을 주고 싶어",
           "지금처럼 곁에 있어 주기를 언제나",
-          "",
-          "사막에서 꽃을 피우듯 널 만난 건 기적인 걸",
-          "설렘이 사라지더라도 이 사랑을 지켜줄게",
-          "",
+          "사막에서 꽃을 피우듯 널 만난 건 기적인 걸"
+          ]},
+          {"time": 76, "lines": [
+          "설레임이 사라지더라도 이 사랑을 지켜줄게",
           "허물없이 지내다가도",
           "힘든 날엔 말없이 기댈 수 있게",
-          "언제나 네 곁에 내가 서 있을게",
-          "",
+          "언제나 네 곁에 내가 서 있을게"
+          ]},
+          {"time": 106, "lines": [
           "한 걸음 한 걸음",
           "어둡지 않게 내가 널 비춰줄게",
           "지금처럼 곁에 있어 주면 돼 언제나",
-          "",
-          "사막에서 꽃을 피우듯 널 만난 건 기적인 걸",
-          "설렘이 사라지더라도 이 사랑을 지켜줄게",
-          "",
+          "사막에서 꽃을 피우듯 널 만난 건 기적인 걸"
+          ]},
+          {"time": 133, "lines": [
+          "설레임이 사라지더라도 이 사랑을 지켜줄게",
           "허물없이 지내다가도",
           "힘든 날엔 말없이 기댈 수 있게",
-          "언제나 네 곁에 내가 서 있을게",
-          "",
+          "언제나 네 곁에 내가 서 있을게"
+          ]},
+          {"time": 157, "lines": [
           "너와 함께하는 이 시간이",
           "조금만 더 천천히 흘러가길",
-          "",
           "어떤 날엔 웃게 해 줄게",
-          "좋은 날엔 더 안아줄게",
+          "좋은 날엔 더 안아줄게"
+          ]},
+          {"time": 184, "lines": [
           "슬픈 날엔 그냥 울어도 돼",
           "내가 더 노력할게",
-          "",
           "허물없이 지내다가도",
-          "힘든 날엔 말없이 기댈 수 있게",
+          "힘든 날엔 말없이 기댈 수 있게"
+          ]},
+          {"time": 203, "lines": [
           "언제나 네 곁에 내가 서 있을게",
-          "",
           "언제나 네 곁에 있을게"
+          ]}
         ],
       "likes": 0
     },
@@ -235,118 +258,142 @@
         "img": "assets/img/fightorescape.jpg",
         "audio": "assets/audio/lovesong.m4a",
         "lyrics": [
-          "I know I love you",
-          "",
+          {"time": 0, "lines": [
+          "I know I love you"
+          ]},
+          {"time": 13, "lines": [
           "이 제로의 세계 속",
           "I know you’re my 1 & only",
           "이 끝이 없던 어둠 속",
-          "Like oh my god so holy",
-          "",
+          "Like oh my god so holy"
+          ]},
+          {"time": 22, "lines": [
           "뭐든 내 두 손끝에선",
           "부리나케 도망가 멀리",
           "My life before you was a mess",
-          "언제나 단 한 판 이길 수 없던 체스",
-          "",
+          "언제나 단 한 판 이길 수 없던 체스"
+          ]},
+          {"time": 30, "lines": [
           "Oh we",
           "무저갱의 바닥에서",
           "넌 유1하게 빛나던 gold",
-          "Now I can't stop thinking bout you",
-          "",
+          "Now I can't stop thinking bout you"
+          ]},
+          {"time": 38, "lines": [
           "When I'm sinking alone",
           "어느 날 내게 나타난 천사",
           "데려가 줘 너의 hometown",
-          "I know it's real I can feel it",
-          "",
+          "I know it's real I can feel it"
+          ]},
+          {"time": 48, "lines": [
           "난 문제 투성이 love sick",
           "길이 없었어",
           "죽어도 좋았어",
-          "I'm a loser in this game",
-          "",
+          "I'm a loser in this game"
+          ]},
+          {"time": 57, "lines": [
           "세계의 유1한 법칙",
           "나를 구해줘",
           "내 손을 잡아줘",
-          "Please use me like a drug",
-          "",
+          "Please use me like a drug"
+          ]},
+          {"time": 66, "lines": [
           "I know I love you",
           "Say you love me",
           "Say you love me",
-          "세계의 끝까지",
-          "",
+          "세계의 끝까지"
+          ]},
+          {"time": 72, "lines": [
           "All or nothing",
           "I want all of you",
           "I know I love you",
-          "Say you love me",
-          "",
+          "Say you love me"
+          ]},
+          {"time": 79, "lines": [
           "Say you love me",
           "세계의 끝까지",
           "All or nothing",
-          "I give all of you",
-          "",
+          "I give all of you"
+          ]},
+          {"time": 85, "lines": [
           "I know I love you",
           "아마 난 안될 거야",
           "천국엔 못 갈 거야",
-          "난 어울리지 않아",
-          "",
+          "난 어울리지 않아"
+          ]},
+          {"time": 93, "lines": [
           "내 자리 따위 천국엔 없어",
           "뭐든 내 두 발끝에선",
           "새까맣게 물들었었지",
-          "My life before you was trash",
-          "",
+          "My life before you was trash"
+          ]},
+          {"time": 102, "lines": [
           "언제나 단 한 발 붙일 수 없던 match",
           "Oh we",
           "얼음뿐인 이곳에서",
-          "넌 유1하게 빛나던 glow",
-          "",
+          "넌 유1하게 빛나던 glow"
+          ]},
+          {"time": 109, "lines": [
           "Now I can't stop thinking bout you",
           "When I'm sinking alone",
           "그러다 내게 나타난 천사",
-          "데려가 줘 너의 hometown",
-          "",
+          "데려가 줘 너의 hometown"
+          ]},
+          {"time": 117, "lines": [
           "I know it's real I can feel it",
           "난 문제 투성이 love sick",
           "길이 없었어",
-          "죽어도 좋았어",
-          "",
+          "죽어도 좋았어"
+          ]},
+          {"time": 127, "lines": [
           "I'm a loser in this game",
           "세계의 유1한 법칙",
           "나를 구해줘",
-          "내 손을 잡아줘",
-          "",
+          "내 손을 잡아줘"
+          ]},
+          {"time": 136, "lines": [
           "Please use me like a drug",
           "I know I love you",
           "구멍 난 영혼에 살이 돋아",
-          "추운 대기가 녹아가",
-          "",
+          "추운 대기가 녹아가"
+          ]},
+          {"time": 150, "lines": [
           "제로의 세계 속에",
           "찾아낸 너라는 온기",
           "내 모두를 거둬가",
-          "Girl I need you",
-          "",
+          "Girl I need you"
+          ]},
+          {"time": 160, "lines": [
           "난 문제 투성이 love sick",
           "길이 없었어",
           "죽어도 좋았어",
-          "I'm a loser in this game",
-          "",
+          "I'm a loser in this game"
+          ]},
+          {"time": 169, "lines": [
           "세계의 유1한 법칙",
           "나를 구해줘",
           "내 손을 잡아줘",
-          "Please use me like a drug",
-          "",
+          "Please use me like a drug"
+          ]},
+          {"time": 177, "lines": [
           "I know I love you",
           "Say you love me",
           "Say you love me",
-          "세계의 끝까지",
-          "",
+          "세계의 끝까지"
+          ]},
+          {"time": 184, "lines": [
           "All or nothing",
           "I want all of you",
           "I know I love you",
-          "Say you love me",
-          "",
+          "Say you love me"
+          ]},
+          {"time": 190, "lines": [
           "Say you love me",
           "세계의 끝까지",
           "All or nothing",
           "I give all of you",
           "I know I love you"
+          ]}
         ],
         "likes": 0
       },
@@ -356,110 +403,132 @@
         "img": "assets/img/BETELGEUSE.jpg",
         "audio": "assets/audio/betelgeuse.m4a",
         "lyrics": [
+          {"time": 0, "lines": [
           "空にある何かを見つめてたら",
           "소라니 아루 나니카오 미츠메테타라",
           "それは星だって君がおしえてくれた ",
-          "소레와 호시닷테 키미가 오시에테 쿠레타",
-          "",
+          "소레와 호시닷테 키미가 오시에테 쿠레타"
+          ]},
+          {"time": 12, "lines": [
           "まるでそれは僕らみたいに 寄り添ってる",
           "마루데 소레와 보쿠라 미타이니 요리솟테루",
           "それを泣いたり笑ったり繋いでいく",
-          "소레오 나이타리 와랏타리 츠나이데 이쿠",
-          "",
+          "소레오 나이타리 와랏타리 츠나이데 이쿠"
+          ]},
+          {"time": 23, "lines": [
           "何十回 何百回 ぶつかりあって",
           "난쥬-카이 난뱌쿠카이 부츠카리앗테",
           "何十年 何百年 昔の光が",
-          "난쥬-넨 난뱌쿠넨 무카시노 히카리가",
-          "",
+          "난쥬-넨 난뱌쿠넨 무카시노 히카리가"
+          ]},
+          {"time": 34, "lines": [
           "星自身も忘れたころに",
           "호시 지신모 와스레타 코로니",
           "僕らに届いてる",
-          "보쿠라니 토도이테루",
-          "",
+          "보쿠라니 토도이테루"
+          ]},
+          {"time": 44, "lines": [
           "僕ら見つけあって 手繰りあって 同じ空",
           "보쿠라 미츠케앗테 타구리앗테 오나지 소라",
           "輝くのだって 二人だって 約束した",
-          "카가야쿠노 닷테 후타리닷테 야쿠소쿠시타",
-          "",
+          "카가야쿠노 닷테 후타리닷테 야쿠소쿠시타"
+          ]},
+          {"time": 54, "lines": [
           "遥か遠く終わらないべテルギウス",
           "하루카 토오쿠 오와라나이 베테루기우스",
           "誰かに繋ぐ魔法",
-          "다레카니 츠나구 마호-",
-          "",
+          "다레카니 츠나구 마호-"
+          ]},
+          {"time": 65, "lines": [
           "僕ら 肩並べ 手取り合って 進んでく",
           "보쿠라 카타나라베 테도리앗테 스슨데쿠",
           "辛い時だって 泣かないって 誓っただろう",
-          "츠라이 토키닷테 나카나잇테 치캇타다로-",
-          "",
+          "츠라이 토키닷테 나카나잇테 치캇타다로-"
+          ]},
+          {"time": 75, "lines": [
           "遥か遠く終わらないべテルギウス",
           "하루카 토오쿠 오와라나이 베테루기우스",
           "君にも見えるだろう 祈りが",
-          "키미니모 미에루다로- 이노리가",
-          "",
+          "키미니모 미에루다로- 이노리가"
+          ]},
+          {"time": 89, "lines": [
           "記憶を辿るたび 蘇るよ",
           "키오쿠오 타도루 타비 요미가에루요",
           "君がいつだってそこに居てくれること",
-          "키미가 이츠닷테 소코니 이테쿠레루 코토",
-          "",
+          "키미가 이츠닷테 소코니 이테쿠레루 코토"
+          ]},
+          {"time": 100, "lines": [
           "まるでそれは星の光と 同じように",
           "마루데 소레와 호시노 히카리토 오나지요-니",
           "今日に泣いたり笑ったり繋いでいく",
-          "쿄-니 나이타리 와랏타리 츠나이데 이쿠",
-          "",
+          "쿄-니 나이타리 와랏타리 츠나이데 이쿠"
+          ]},
+          {"time": 110, "lines": [
           "何十回 何百回 ぶつかりあって",
           "난쥬-카이 난뱌쿠카이 부츠카리앗테",
           "何十年 何百年 昔の光が",
-          "난쥬-넨 난뱌쿠넨 무카시노 히카리가",
-          "",
+          "난쥬-넨 난뱌쿠넨 무카시노 히카리가"
+          ]},
+          {"time": 121, "lines": [
           "僕自身も忘れたころに",
           "보쿠 지신모 와스레타 코로니",
           "僕らを照らしてる",
-          "보쿠라오 테라시테루",
-          "",
+          "보쿠라오 테라시테루"
+          ]},
+          {"time": 132, "lines": [
           "僕ら見つけあって 手繰りあって 同じ空",
           "보쿠라 미츠케앗테 타구리앗테 오나지 소라",
           "輝くのだって 二人だって 約束した",
-          "카가야쿠노닷테 후타리닷테 야쿠소쿠시타",
-          "",
+          "카가야쿠노닷테 후타리닷테 야쿠소쿠시타"
+          ]},
+          {"time": 142, "lines": [
           "遥か遠く終わらないべテルギウス",
           "하루카 토오쿠 오와라나이 베테루기우스",
           "誰かに繋ぐ魔法",
-          "다레카니 츠나구 마호-",
-          "",
+          "다레카니 츠나구 마호-"
+          ]},
+          {"time": 153, "lines": [
           "どこまで いつまで 生きられるか",
           "도코마데 이츠마데 이키라레루카",
           "君が不安になるたびに強がるんだ",
-          "키미가 후안니 나루 타비니 츠요가룬다",
-          "",
+          "키미가 후안니 나루 타비니 츠요가룬다"
+          ]},
+          {"time": 163, "lines": [
           "大丈夫 僕が横にいるよ",
           "다이죠-부 보쿠가 요코니 이루요",
           "見えない線を繋ごう",
-          "미에나이 센오 츠나고-",
-          "",
+          "미에나이 센오 츠나고-"
+          ]},
+          {"time": 174, "lines": [
           "僕ら見つけあって 手繰りあって 同じ空",
           "보쿠라 미츠케앗테 테구리앗테 오나지 소라",
           "輝くのだって 二人だって 約束した",
-          "카가야쿠노닷테 후타리닷테 야쿠소쿠시타",
-          "",
+          "카가야쿠노닷테 후타리닷테 야쿠소쿠시타"
+          ]},
+          {"time": 185, "lines": [
           "遥か遠く終わらないべテルギウス",
           "하루카 토오쿠 오와라나이 베테루기우스",
           "誰かに繋ぐ魔法",
-          "다레카니 츠나구 마호-",
-          "",
+          "다레카니 츠나구 마호-"
+          ]},
+          {"time": 196, "lines": [
           "僕ら 肩並べ 手取り合って 進んでく",
           "보쿠라 카타나라베 테도리앗테 스슨데쿠",
           "辛い時だって 二人だって 誓っただろう",
-          "츠라이 토키닷테 후타리닷테 치캇타다로-",
-          "",
+          "츠라이 토키닷테 후타리닷테 치캇타다로-"
+          ]},
+          {"time": 206, "lines": [
           "遥か遠く終わらないべテルギウス",
           "하루카 토오쿠 오와라나이 베테루기우스",
           "君にも見えるだろう 祈りが",
-          "키미니모 미에루다로- 이노리가",
-          "",
+          "키미니모 미에루다로- 이노리가"
+          ]},
+          {"time": 220, "lines": [
           "空にある何かを見つめてたら",
           "소라니 아루 나니카오 미츠메테타라",
           "それは星だって君がおしえてくれた",
           "소레와 호시닷테 키미가 오시에테 쿠레타"
+          ]}
         ],
         "likes": 0
       },
@@ -469,64 +538,77 @@
         "img": "assets/img/diewithasmile.jpg",
         "audio": "assets/audio/diewithasmile.m4a",
         "lyrics": [
+          {"time": 0, "lines": [
             "I, I just woke up from a dream",
             "Where you and I had to say goodbye",
             "And I don't know what it all means",
-            "But since I survived, I realized",
-            "",
+            "But since I survived, I realized"
+            ]},
+            {"time": 29, "lines": [
             "Wherever you go, that's where I'll follow",
             "Nobody's promised tomorrow",
             "So I'ma love you every night like it's the last night",
-            "Like it's the last night",
-            "",
+            "Like it's the last night"
+            ]},
+            {"time": 45, "lines": [
             "If the world was ending",
             "I'd wanna be next to you",
             "If the party was over",
-            "And our time on Earth was through",
-            "",
+            "And our time on Earth was through"
+            ]},
+            {"time": 63, "lines": [
             "I'd wanna hold you just for a while",
             "And die with a smile",
             "If the world was ending,",
-            "I'd wanna be next to you",
-            "",
+            "I'd wanna be next to you"
+            ]},
+            {"time": 79, "lines": [
             "Ooh, lost, lost in the words that we scream,",
             "I don't even wanna do this anymore",
             "'Cause you already know what you mean to me",
-            "And our love's the only one worth fighting for",
-            "",
+            "And our love's the only one worth fighting for"
+            ]},
+            {"time": 106, "lines": [
             "Wherever you go, that's where I'll follow",
             "Nobody's promised tomorrow",
             "So I'ma love you every night like it's the last night",
-            "Like it's the last night",
-            "",
+            "Like it's the last night"
+            ]},
+            {"time": 122, "lines": [
             "If the world was ending",
             "I'd wanna be next to you",
             "If the party was over",
-            "And our time on Earth was through",
-            "",
+            "And our time on Earth was through"
+            ]},
+            {"time": 140, "lines": [
             "I'd wanna hold you just for a while",
             "And die with a smile",
             "If the world was ending",
-            "I'd wanna be next to you",
-            "",
+            "I'd wanna be next to you"
+            ]},
+            {"time": 158, "lines": [
             "Right next to you",
             "Next to you",
             "Right next to you",
-            "Oh-oh",
-            "",
+            "Oh-oh"
+            ]},
+            {"time": 190, "lines": [
             "If the world was ending",
             "I'd wanna be next to you",
             "If the party was over",
-            "And our time on Earth was through",
-            "",
+            "And our time on Earth was through"
+            ]},
+            {"time": 209, "lines": [
             "I'd wanna hold you just for a while",
             "And die with a smile",
             "If the world was ending",
-            "I'd wanna be next to you",
-            "",
+            "I'd wanna be next to you"
+            ]},
+            {"time": 227, "lines": [
             "If the world was ending",
             "I'd wanna be next to you",
             "I'd wanna be next to you"
+            ]}
           ],
         "likes": 0
       },
@@ -536,56 +618,69 @@
         "img": "assets/img/thewinning.jpg",
         "audio": "assets/audio/lovewinsall.m4a",
        "lyrics": [
+            {"time": 0, "lines": [
             "Dearest, Darling, My universe",
             "날 데려가 줄래?",
             "나의 이 가난한 상상력으론",
-            "떠올릴 수 없는 곳으로",
-            "",
+            "떠올릴 수 없는 곳으로"
+            ]},
+            {"time": 40, "lines": [
             "저기 멀리 from Earth to Mars",
             "꼭 같이 가줄래?",
             "그곳이 어디든, 오랜 외로움",
-            "그 반대말을 찾아서",
-            "",
+            "그 반대말을 찾아서"
+            ]},
+            {"time": 60, "lines": [
             "어떤 실수로",
             "이토록 우리는",
-            "함께일까",
-            "",
+            "함께일까"
+            ]},
+            {"time": 72, "lines": [
             "세상에게서 도망쳐 Run on",
             "나와 저 끝까지 가줘 My lover",
-            "나쁜 결말일까 길 잃은 우리 둘 um",
-            "",
+            "나쁜 결말일까 길 잃은 우리 둘 um"
+            ]},
+            {"time": 91, "lines": [
             "부서지도록 나를 꼭 안아",
             "더 사랑히 내게 입 맞춰 Lover",
             "Love is all Love is all",
-            "Love Love Love Love",
-            "",
+            "Love Love Love Love"
+            ]},
+            {"time": 128, "lines": [
             "결국, 그럼에도,",
             "어째서 우리는",
-            "서로일까",
-            "",
+            "서로일까"
+            ]},
+            {"time": 140, "lines": [
             "세상에게서 도망쳐 Run on",
             "나와 저 끝까지 가줘 My lover",
-            "나쁜 결말일까 길 잃은 우리 둘 um",
-            "",
+            "나쁜 결말일까 길 잃은 우리 둘 um"
+            ]},
+            {"time": 161, "lines": [
             "찬찬히 너를 두 눈에 담아",
-            "한 번 더 편안히 웃어주렴",
-            "",
+            "한 번 더 편안히 웃어주렴"
+            ]},
+            {"time": 170, "lines": [
             "유영하듯 떠오른",
             "그날 그 밤처럼,",
             "나와 함께 겁 없이",
-            "저물어줄래?",
-            "",
+            "저물어줄래?"
+            ]},
+            {"time": 191, "lines": [
             "산산히 나를 더 망쳐 Ruiner",
-            "너와 슬퍼지고 싶어 My lover",
-            "",
+            "너와 슬퍼지고 싶어 My lover"
+            ]},
+            {"time": 209, "lines": [
             "필연에게서 도망쳐 Run on",
             "나와 저 끝까지 가줘 My lover",
-            "일부러 나란히 길 잃은 우리 두 사람",
-            "",
+            "일부러 나란히 길 잃은 우리 두 사람"
+            ]},
+            {"time": 228, "lines": [
             "부서지도록 나를 꼭 안아",
             "더 사랑히 내게 입 맞춰 Lover",
             "Our Love wins all Love wins all",
             "Love Love Love Love"
+            ]}
           ],
         "likes": 0
       },
@@ -595,62 +690,75 @@
         "img": "assets/img/loseyourself.jpg",
         "audio": "assets/audio/igloo.m4a",
        "lyrics": [
+        {"time": 0, "lines": [
             "Imma back up every word",
             "Mini skirt, pretty pink",
             "What you heard",
             "But it's never what you think",
-            "Trust",
-            "",
+            "Trust"
+            ]},
+            {"time": 14, "lines": [
             "I got finger-licking venom",
             "Little sweet, a little bitter",
-            "Looking like a seven figure on me cause I",
-            "",
+            "Looking like a seven figure on me cause I"
+            ]},
+            {"time": 21, "lines": [
             "Mmmm",
             "I can melt an igloo",
             "Yeah cause I'm so dang hot",
-            "I got everything you - that you're feening for",
-            "",
+            "I got everything you - that you're feening for"
+            ]},
+            {"time": 35, "lines": [
             "Throwing some cash on that body",
             "Throw in some cash, make 'em put in that work",
             "Whether it rains or it's sunny",
-            "Best believe I keep 'em running back",
-            "",
+            "Best believe I keep 'em running back"
+            ]},
+            {"time": 41, "lines": [
             "Glass room, perfume, Kodak on that lilac",
-            "Slipping on my short dress, know he like that",
-            "",
+            "Slipping on my short dress, know he like that"
+            ]},
+            {"time": 48, "lines": [
             "Facetime on the regular",
             "In the night, wanna say what's up",
-            "He knows this ain't regular, got that A1 on the schedule",
-            "",
+            "He knows this ain't regular, got that A1 on the schedule"
+            ]},
+            {"time": 55, "lines": [
             "I got finger-licking venom",
             "Little sweet, a little bitter",
-            "Looking like a seven figure on me cause I",
-            "",
+            "Looking like a seven figure on me cause I"
+            ]},
+            {"time": 62, "lines": [
             "Mmmm",
             "I can melt an igloo",
             "Yeah cause I'm so dang hot",
-            "I got everything you - that you're feening for",
-            "",
+            "I got everything you - that you're feening for"
+            ]},
+            {"time": 76, "lines": [
             "Heart attack -IV",
             "When I walk the street",
             "Vitamins that D",
-            "I'm good, I'm healthy",
-            "",
+            "I'm good, I'm healthy"
+            ]},
+            {"time": 82, "lines": [
             "Every summer I come out",
             "Make 'em disappear like clouds",
             "To me, it's another year to you, it's all you worry 'bout",
             "Yeah white tippy toe summer",
             "I make him go dumb duh",
-            "He doubled down on that text, says that I'm the only one",
-            "",
+            "He doubled down on that text, says that I'm the only one"
+            ]},
+            {"time": 96, "lines": [
             "Mmmm",
             "I make him lose his cool",
-            "Yeah I make him go",
-            "",
+            "Yeah I make him go"
+            ]},
+            {"time": 103, "lines": [
             "Mmmm",
             "I can melt an igloo",
             "Yeah cause I'm so dang hot",
             "I got everything you - that you're feening for"
+            ]}
             ],
         "likes": 0
       },
@@ -660,81 +768,38 @@
         "img": "assets/img/homesweethome.jpg",
         "audio": "assets/audio/homesweethome.m4a",
         "lyrics": [
+          {"time": 0, "lines": [
             "You say, It's changed",
             "Show must go on, Behave",
             "오랜만에 옛 노래해",
             "I'm feelin' like I never left",
-            "(That's right) I never left",
-            "",
+            "(That's right) I never left"
+            ]},
+            {"time": 25, "lines": [
             "But you ain't know, O.K then lights camera, Act like you know",
             "Don't play on me no we're",
             "Air B&B, You're 'Home-less'",
             "혼비백산-해진-미-장센 (mise-en-scène)",
-            "도레미파시도 (Now you know it)",
-            "",
+            "도레미파시도 (Now you know it)"
+            ]},
+            {"time": 38, "lines": [
             "두껍아 두껍아 Came with the troops",
             "뜯고 맛보고 즐기고 big bang when I shoot",
             "'King' in the Zoo, He gotta do what I do",
             "1 of 1, not of them (mirror)",
             "Man in the 'Views' Aimin' at you?!",
             "Yea, I'm aiming at a man & Amen achoo",
-            "Bless you all 'Cleaned house' Foo",
-            "",
+            "Bless you all 'Cleaned house' Foo"
+            ]},
+            {"time": 50, "lines": [
             "Golden days are still alive",
             "외롭다는 말하지 마",
-            "내가 있는 곳, 네가 있을 곳",
-            "",
-            "The place that I belong",
-            "",
-            "HOME SWEET HOME",
-            "HOME SICK HOME",
-            "Well I said, I would be back",
-            "And I'd never let you go",
-            "Pick a petal off a flower",
-            "Daze you love me Nope?",
-            "Well I said, I would be back",
-            "And I'd never let you go",
-            "Pick a petal off a flower",
-            "Do you love me or (STOP!)",
-            "",
-            "Winner winner chicken killer, 삼계탕 dinner",
-            "하나 둘 set down (1, 2 step) 'Fantastic'한 팀워크",
-            "Not mini, 많이. 'More'",
-            "Rock, scissors, paper. 'Toast'",
-            "This is how we do it just do it let's do it y'all",
-            "",
-            "Work- work- 월화수목금토- 일",
-            "They gon' wait til' I'm gone",
-            "So I came, I saw, I won",
-            "'G just D' Word is my bond",
-            "",
-            "나 무대로 올라, Coup d'e shh",
-            "단숨에 호흡곤란, Hook catch this",
-            "아 '무제' 도 몰라? Bull as shh",
-            "Whatever?! 'Now or Never'",
-            "",
-            "Golden days are still alive",
-            "외롭다는 말하지 마",
-            "네가 있을 곳에 내가 있는 걸",
-            "",
-            "The place that I belong",
-            "",
-            "HOME SWEET HOME",
-            "HOME SICK HOME",
-            "Well I said, I would be back",
-            "And I'd never let you go",
-            "Pick a petal off a flower",
-            "Daze you love me Nope?",
-            "Well I said, I would be back",
-            "And I'd never let you go",
-            "Pick a petal off a flower",
-            "Do you love me or (STOP!)",
-            "",
-            "We alike dead or alive, Your life? Still-life",
-            "It's so nice, I missed u a lot, You're welcome Back home, Wherever you are",
-            "We alike dead or alive, Your life is still with me Livin' good-life, Day or Nights,",
-            "The high-light, It's about time to 'ROCK-ON'",
-            "",
+            "내가 있는 곳, 네가 있을 곳"
+            ]},
+            {"time": 61, "lines": [
+            "The place that I belong"
+            ]},
+            {"time": 63, "lines": [
             "HOME SWEET HOME",
             "HOME SICK HOME",
             "Well I said, I would be back",
@@ -745,6 +810,64 @@
             "And I'd never let you go",
             "Pick a petal off a flower",
             "Do you love me or (STOP!)"
+            ]},
+            {"time": 89, "lines": [
+            "Winner winner chicken killer, 삼계탕 dinner",
+            "하나 둘 set down (1, 2 step) 'Fantastic'한 팀워크",
+            "Not mini, 많이. 'More'",
+            "Rock, scissors, paper. 'Toast'",
+            "This is how we do it just do it let's do it y'all"
+            ]},
+            {"time": 101, "lines": [
+            "Work- work- 월화수목금토- 일",
+            "They gon' wait til' I'm gone",
+            "So I came, I saw, I won",
+            "'G just D' Word is my bond"
+            ]},
+            {"time": 108, "lines": [
+            "나 무대로 올라, Coup d'e shh",
+            "단숨에 호흡곤란, Hook catch this",
+            "아 '무제' 도 몰라? Bull as shh",
+            "Whatever?! 'Now or Never'"
+            ]},
+            {"time": 114, "lines": [
+            "Golden days are still alive",
+            "외롭다는 말하지 마",
+            "네가 있을 곳에 내가 있는 걸"
+            ]},
+            {"time": 124, "lines": [
+            "The place that I belong"
+            ]},
+            {"time": 127, "lines": [
+            "HOME SWEET HOME",
+            "HOME SICK HOME",
+            "Well I said, I would be back",
+            "And I'd never let you go",
+            "Pick a petal off a flower",
+            "Daze you love me Nope?",
+            "Well I said, I would be back",
+            "And I'd never let you go",
+            "Pick a petal off a flower",
+            "Do you love me or (STOP!)"
+            ]},
+            {"time": 143, "lines": [
+            "We alike dead or alive, Your life? Still-life",
+            "It's so nice, I missed u a lot, You're welcome Back home, Wherever you are",
+            "We alike dead or alive, Your life is still with me Livin' good-life, Day or Nights,",
+            "The high-light, It's about time to 'ROCK-ON'"
+            ]},
+            {"time": 600, "lines": [
+            "HOME SWEET HOME",
+            "HOME SICK HOME",
+            "Well I said, I would be back",
+            "And I'd never let you go",
+            "Pick a petal off a flower",
+            "Daze you love me Nope?",
+            "Well I said, I would be back",
+            "And I'd never let you go",
+            "Pick a petal off a flower",
+            "Do you love me or (STOP!)"
+            ]}
             ],
         "likes": 0
       },
