@@ -24,6 +24,15 @@
     margin: 5px 0;
 }
 
+#player-title {
+    font-size: 24px;
+    transition: font-size 0.2s ease;
+}
+
+#player-title.long-title {
+    font-size: 20px;
+}
+
 .icons {
     display: flex;
     align-items: center;
@@ -81,14 +90,25 @@
     cursor: pointer;
     margin-right: 5px;
     border: none;
+    background-color: transparent;
 }
+
+/* 하트 버튼 눌렀을 때(좋아요 상태) */
+#likeBtn.liked {
+    color: black;
+}
+
 
 /* 가사 */
 
-.lyrics{
+.lyrics {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: 182px; /* 원하는 높이로 조정 */
+    max-height: 182px; /* 너무 길어지는 경우 방지 */
+    overflow: hidden;  /* 넘치는 가사는 숨김 */
+    text-align: center;
 }
 
 .song-lyrics {
@@ -101,6 +121,10 @@
     line-height: 27px;
 }
 
+.song-lyrics p {
+   text-align: center;
+}
+
 /* 플레이어바 */
 
 .playermusic {
@@ -108,7 +132,7 @@
     justify-content: center; /* 가로 중앙 정렬 */
     align-items: center; /* 세로 중앙 정렬 */
     width: 100%;
-    margin-top: -6px;
+    margin-top: 12px;
 }
 
 .playerarea {
