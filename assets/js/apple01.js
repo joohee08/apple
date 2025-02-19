@@ -9,14 +9,11 @@ function initSwipers() {
     });
 
     new Swiper(".recentSwiper", {
+        slidesPerView: 2.5,
         spaceBetween: 20,
         grabCursor: true,
         freeMode: true,
         loop: false,
-        breakpoints: {
-            768: { slidesPerView: 2.3 },   // 태블릿 이상
-            1024: { slidesPerView: 2.3 }   // PC 이상
-          }
     });
 
     new Swiper(".nextSwiper", {
