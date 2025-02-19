@@ -1,24 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
-    function isMobile() {
-        return window.innerWidth <= 768;
-    }
-
-    const introScreen = document.getElementById('introScreen');
-    const mainContent = document.getElementById('mainContent');
-
-    if (isMobile()) {
-        introScreen.style.display = 'flex';
-        mainContent.style.display = 'none';
-
-        setTimeout(function () {
-            introScreen.style.display = 'none';
-            mainContent.style.display = 'block';
-        }, 2000);
-    } else {
-        // 데스크탑에서는 바로 메인화면 보이게
-        mainContent.style.display = 'block';
-    }
-});
 
 //Swiper 초기화
 function initSwipers() {
