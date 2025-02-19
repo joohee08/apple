@@ -1,5 +1,5 @@
 /* container */
-.container {width: 1000px; margin: 0 auto;}
+.container {width: 1000px; margin: 0 auto; overflow: hidden;}
 
 /* row */
 .row {position: relative; margin: 0 20px;}
@@ -333,11 +333,7 @@
     cursor: grabbing;
 }
 
-.container {
-    overflow: hidden;
-}
-
 /* mediaquery */
-@media (max-width: 1020px){
+@media (max-width: 1030px){
     .container {width: 100%;}
 }

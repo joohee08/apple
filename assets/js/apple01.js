@@ -57,8 +57,9 @@ function playSong(song) {
     playerArtist.textContent = song.artist;
     audioPlayer.src = song.audio;
 
-    audioPlayer.load();
-    audioPlayer.play();
+    audioPlayer.play().catch((e) => {
+        console.warn("재생 실패:", e);
+    });
     playPauseBtn.classList.remove("paused");
 
     currentSongIndex = songs.findIndex((s) => s.title === song.title);
@@ -112,6 +113,22 @@ function initSongs() {
     });
 }
 
+//플레이바 들었던 가장 최근(마지막곡)표시
+function loadLastPlayedSong() {
+    const lastSongData = sessionStorage.getItem("currentSong");
+
+    if (lastSongData) {
+        const songData = JSON.parse(lastSongData);
+
+        const { playerImg, playerTitle, playerArtist } = initPlayer();
+        playerImg.src = songData.img;
+        playerTitle.textContent = songData.title;
+        playerArtist.textContent = songData.artist;
+    } else {
+        console.log("최근 재생한 곡이 없습니다.");
+    }
+}
+
 document.addEventListener("DOMContentLoaded", async function () {
     initSwipers();
     await loadSongs();
@@ -123,6 +140,8 @@ document.addEventListener("DOMContentLoaded", async function () {
     prevBtn.addEventListener("click", playPrevSong);
     nextBtn.addEventListener("click", playNextSong);
     audioPlayer.addEventListener("ended", playNextSong);
+
+    loadLastPlayedSong(); // 최근 곡 정보 불러와서 표시
 
     const currentSongData = sessionStorage.getItem("currentSong");
     if (currentSongData) {
