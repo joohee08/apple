@@ -1,3 +1,20 @@
+ // 2초 후 인트로 숨기고 메인 콘텐츠 보여줌
+ function isMobile() {
+    return window.innerWidth <= 768; // 모바일 기준 (해상도는 필요에 따라 조정)
+}
+
+// 모바일일 때만 인트로 표시
+if (isMobile()) {
+    document.getElementById('introScreen').style.display = 'flex';
+    document.getElementById('mainContent').style.display = 'none';
+
+    // 2초 후 인트로 숨기고 메인 콘텐츠 보여줌
+    setTimeout(function () {
+        document.getElementById('introScreen').style.display = 'none';
+        document.getElementById('mainContent').style.display = 'block';
+    }, 2000);
+}
+
 //Swiper 초기화
 function initSwipers() {
     new Swiper(".mySwiper", {
