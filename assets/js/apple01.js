@@ -14,8 +14,8 @@ function initSwipers() {
         freeMode: true,
         loop: false,
         breakpoints: {
-            768: { slidesPerView: 3 },   // 태블릿 이상
-            1024: { slidesPerView: 3 }   // PC 이상
+            768: { slidesPerView: 2.7 },   // 태블릿 이상
+            1024: { slidesPerView: 2.7 }   // PC 이상
           }
     });
 
