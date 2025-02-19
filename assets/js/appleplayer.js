@@ -42,6 +42,13 @@ function setSongInfo(song) {
     playerImg.src = song.img;
     playerTitle.textContent = song.title;
     playerArtist.textContent = song.artist;
+
+      // 제목 길이에 따라 폰트 크기 조절
+      if (song.title.length > 11) {
+        playerTitle.classList.add("long-title");
+    } else {
+        playerTitle.classList.remove("long-title");
+    }
 }
 
 function setLikes(song) {

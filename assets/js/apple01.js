@@ -60,6 +60,14 @@ function playSong(song) {
     audioPlayer.play().catch((e) => {
         console.warn("재생 실패:", e);
     });
+
+     // 제목 길이에 따라 폰트 크기 조절
+     if (song.title.length > 11) {
+        playerTitle.classList.add("long-title");
+    } else {
+        playerTitle.classList.remove("long-title");
+    }
+    
     playPauseBtn.classList.remove("paused");
 
     currentSongIndex = songs.findIndex((s) => s.title === song.title);

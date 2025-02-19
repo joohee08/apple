@@ -247,6 +247,15 @@
     color: #666;
 }
 
+#player-title {
+    font-size: 20px;
+    transition: font-size 0.2s ease;
+}
+
+#player-title.long-title {
+    font-size: 15px;
+}
+
 /*컨트롤 버튼 */
 .playlistM .playlist .playlist-controls {
     display: flex;
