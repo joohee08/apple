@@ -14,7 +14,7 @@ function initSwipers() {
         freeMode: true,
         loop: false,
         breakpoints: {
-            320: { slidesPerView: 2 }, // 아주 작은 모바일
+            320: { slidesPerView: 3 }, // 아주 작은 모바일
             768: { slidesPerView: 3 },   // 태블릿 이상
             1024: { slidesPerView: 3 }   // PC 이상
           }
