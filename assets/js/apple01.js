@@ -9,7 +9,7 @@ function initSwipers() {
     });
 
     new Swiper(".recentSwiper", {
-        slidesPerView: 2.5,
+        slidesPerView: 'auto', 
         spaceBetween: 20,
         grabCursor: true,
         freeMode: true,
