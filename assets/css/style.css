@@ -15,6 +15,10 @@
     cursor: grabbing;
 }
 
+.recentSwiper .swiper-slide {
+    width: 120px; /* 슬라이드 하나의 고정 너비 설정 */
+}
+
 /* header */
 #header .header-data {
     font-weight: 600;
