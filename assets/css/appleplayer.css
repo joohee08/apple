@@ -1,5 +1,5 @@
 
-.container {width: 1000px; margin: 0 auto;}
+.container {width: 1000px; margin: 0 auto;  overflow: hidden;}
 
 
 .row {position: relative; margin: 23px 55px;}
@@ -260,9 +260,11 @@
     content: url("assets/img2/playmusic.png"); /* 재생 버튼 */
 }
 
-.container {
-    overflow: hidden;
+/* mediaquery */
+@media (max-width: 1030px){
+    .container {width: 100%;}
 }
+
 
 
 
