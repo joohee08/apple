@@ -62,12 +62,12 @@ function playSong(song) {
     });
 
      // 제목 길이에 따라 폰트 크기 조절
-     if (song.title.length > 11) {
+     if (song.title.length > 9) {
         playerTitle.classList.add("long-title");
     } else {
         playerTitle.classList.remove("long-title");
     }
-    
+
     playPauseBtn.classList.remove("paused");
 
     currentSongIndex = songs.findIndex((s) => s.title === song.title);
